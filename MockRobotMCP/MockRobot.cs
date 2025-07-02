@@ -1,6 +1,6 @@
 using System;
 
-namespace Mock;
+namespace LabAutomationMCP;
 
 public class MockRobot
 {

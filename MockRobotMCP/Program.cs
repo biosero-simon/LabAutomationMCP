@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ModelContextProtocol.Server;
 using System.ComponentModel;
-using Mock;
+using LabAutomationMCP;
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Logging.AddConsole(consoleLogOptions =>
@@ -15,7 +15,9 @@ builder.Logging.AddConsole(consoleLogOptions =>
 builder.Services
     .AddMcpServer()
     .WithStdioServerTransport()
-    .WithToolsFromAssembly();
+    .WithToolsFromAssembly()
+    .WithResourcesFromAssembly();
+
 
 builder.Services.AddSingleton<MockRobot>();
 

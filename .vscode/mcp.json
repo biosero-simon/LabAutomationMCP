@@ -1,13 +1,13 @@
 {
     "inputs": [],
     "servers": {
-        "MyFirstMCP": {
+        "MockRobotMCP": {
             "type": "stdio",
             "command": "dotnet",
             "args": [
                 "run",
                 "--project",
-                "/Users/simoncoelho/Repos/MockRobotMCP/MockRobotMCP/MockRobotMCP.csproj"
+                "C:\\Users\\SimonCoelho\\source\\repos\\LabAutomationMCP\\MockRobotMCP\\MockRobotMCP.csproj"
             ]
         }
     }
